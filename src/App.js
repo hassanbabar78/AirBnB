@@ -5,13 +5,15 @@ import { Footer } from './foot';
 import { Categories } from './categories';
 import { SearchBar } from './searchBar';
 
+
 function App() {
   return (
     <div className="App">
      {/* <Header/> */}
      {/* <Categories/> */}
+     <Header/>
      <Footer/>
-     <SearchBar/>
+     {/* <SearchBar/> */}
     </div>
   );
 }

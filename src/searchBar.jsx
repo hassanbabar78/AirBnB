@@ -23,7 +23,7 @@ export function SearchBar(){
     };
 
     return(
-        <div className='container'>
+        <div className='scontainer'>
             <button className='btn'>
                 <div className="dropdown">
                     <div>Where</div>

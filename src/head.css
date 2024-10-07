@@ -1,0 +1,67 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap');
+.hcontainer{
+    width: 100vw;
+    height: 10vh;
+    background-color:white;
+    color: black;
+    border: 0.5px solid black;
+    display: flex;
+}
+.hlogopart{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.hcenterpart{
+    width: 55%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.hendpart{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.smallicon{
+    width: 15px;
+    height: 15px;
+}
+.logosize{
+    width: 35px;
+    height: 35px;
+}
+.logotext{
+    font-size: 25px;
+    font-family: 'Afacad Flux', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    color: rgb(253, 64, 64);
+}
+.hsmallspace{
+    margin-left: 2%;
+}
+.hspace{
+    margin-left: 7%;
+}
+.bspace{
+    margin-left: 17%;
+}
+.hbox{
+    width: 23%;
+    height: 70%;
+    border-radius: 30px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+}
+.bigtext{
+    font-size: 20px;
+}
