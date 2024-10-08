@@ -1,0 +1,75 @@
+/* Footer classes */
+
+  .footer{
+    width: 100vw;
+    height: 50vh;
+    background-color: beige;
+    color: black;
+    /* border: 0.5px solid black; */
+  }
+  .fpart1{
+    width: 100%;
+    height: 80%;
+    /* border: 3px dotted green; */
+    background-color:white;
+  }
+  .fcontainer{
+    width: 90%;
+    margin: auto;
+    height: 85%;
+    padding-top:3%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+  }
+  .fbox1{
+    grid-column: 1/2;
+  }
+  .supportlist{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: start;
+    height: 100%;
+  }
+  .fbox2{
+    grid-column: 2/3;
+    /* border: 2px solid white; */
+  }
+  .fbox3{
+    grid-column: 3/4;
+    /* border: 2px solid white; */
+  }
+  .fpart2{
+    width: 100%;
+    height: 20%;
+    border: 0.5px solid black;
+    background-color:white;
+  }
+  .fcontainer2{
+    width: 90%;
+    margin: auto;
+    height: 85%;
+    display: flex;
+    align-items: center;
+  }
+  .space{
+    margin-left: 1%;
+  }
+  .marginleft{
+    margin-left:43%;
+  }
+  
+  .iconsize{
+    width: 25px;
+    height: 25px;
+    margin-left: 2%;
+  }
+  .supportlist li:hover {
+    text-decoration: underline;
+    cursor:pointer;
+  }
+  .fcontainer2 .space:hover{
+    text-decoration: underline;
+    cursor:pointer;
+  }

@@ -17,7 +17,7 @@
     text-align: center;
 }
 .hcenterpart{
-    width: 55%;
+    width: 60%;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -25,7 +25,7 @@
     text-align: center;
 }
 .hendpart{
-    width: 25%;
+    width: 20%;
     height: 100%;
     display: flex;
     align-items: center;
@@ -49,7 +49,7 @@
     margin-left: 2%;
 }
 .hspace{
-    margin-left: 7%;
+    margin-left: 5%;
 }
 .bspace{
     margin-left: 17%;
@@ -63,5 +63,5 @@
     align-items: center;
 }
 .bigtext{
-    font-size: 20px;
+    font-size: 17px;
 }

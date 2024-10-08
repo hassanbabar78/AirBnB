@@ -1,5 +1,5 @@
 
-import './search.css'; 
+import './Search.css'; 
 import { useState } from 'react';
 
 export function SearchBar(){
@@ -24,10 +24,10 @@ export function SearchBar(){
 
     return(
         <div className='scontainer'>
-            <button className='btn'>
+            <div className='spart'>
                 <div className="dropdown">
-                    <div>Where</div>
-                    <input 
+                    <div className='sspace'>Where</div>
+                    <input className='sspace'
                         type="text"
                         placeholder="Search destinations"
                         onFocus={showDropdown}
@@ -78,22 +78,20 @@ export function SearchBar(){
                         </div>
                     )}
                 </div>
-            </button>
-            <button className='btn'>
+            </div>
+            <div className='spart'>
                 <div className='dropdown'>
-                    <div>Date</div>
-                    <input 
+                  <div className='sspace'>Date</div>
+                    <input className='sspace'
                         type="text"
                         placeholder="Add Date"
-                        
                     />
-                </div>
-               
-            </button>
-            <button className='btn'>
+                </div>           
+            </div>
+            <div className='spart'>
                 <div className='dropdown'>
-                    <div>Who</div>
-                    <input 
+                    <div className='sspace'>Who</div>
+                    <input className='sspace'
                         type="text"
                         placeholder="Add Guests"
                         onFocus={showGuest}
@@ -121,7 +119,7 @@ export function SearchBar(){
                         </div>
                     )}
                 </div>
-            </button>
+            </div>
 
         </div>
     )

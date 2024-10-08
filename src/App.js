@@ -2,7 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import { Header } from './head';
 import { Footer } from './foot';
-import { Categories } from './categories';
+import { Categories } from './list';
 import { SearchBar } from './searchBar';
 
 
@@ -12,8 +12,9 @@ function App() {
      {/* <Header/> */}
      {/* <Categories/> */}
      <Header/>
+     <SearchBar/>
      <Footer/>
-     {/* <SearchBar/> */}
+    
     </div>
   );
 }
