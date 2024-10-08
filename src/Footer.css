@@ -3,7 +3,8 @@
   .footer{
     width: 100vw;
     height: 50vh;
-    background-color: beige;
+    /* background-color: beige; */
+    background-color: gainsboro;
     color: black;
     /* border: 0.5px solid black; */
   }
@@ -11,7 +12,7 @@
     width: 100%;
     height: 80%;
     /* border: 3px dotted green; */
-    background-color:white;
+    /* background-color:white; */
   }
   .fcontainer{
     width: 90%;
@@ -44,7 +45,7 @@
     width: 100%;
     height: 20%;
     border: 0.5px solid black;
-    background-color:white;
+    /* background-color:white; */
   }
   .fcontainer2{
     width: 90%;

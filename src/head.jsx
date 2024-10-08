@@ -1,5 +1,6 @@
 import './Head.css'; 
 
+
 export function Header(){
     return(
         <div className="hcontainer">
@@ -17,7 +18,7 @@ export function Header(){
                 <img className='hspace smallicon' src="/world.png" alt="" />
                 <div className='hspace hbox'>
                     <img className='smallicon bspace' src="/menu.png" alt="" />
-                    <img className='iconsize bspace' src="/person.png" alt="" />
+                    <img className='bigicon bspace' src="/person.png" alt="" />
                 </div>
             </div>
         </div>

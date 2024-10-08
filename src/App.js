@@ -2,8 +2,9 @@ import logo from './logo.svg';
 import './App.css';
 import { Header } from './head';
 import { Footer } from './foot';
-import { Categories } from './list';
+import { List } from './list';
 import { SearchBar } from './searchBar';
+import { Categorylist } from './CategoryList';
 
 
 function App() {
@@ -13,6 +14,8 @@ function App() {
      {/* <Categories/> */}
      <Header/>
      <SearchBar/>
+     <Categorylist/>
+     <List/>
      <Footer/>
     
     </div>

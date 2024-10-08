@@ -1,0 +1,50 @@
+
+.clcontainer{
+    width: 100vw;
+    height: 10vh;
+    background-color:white;
+    border: 0.5px solid black;
+    
+}
+.clmainlist{
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    /* border: 2px solid red; */
+    overflow-x: auto;
+    white-space: nowrap;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+}
+.cliconsize{
+    width: 20px;
+   height: 20px;
+}
+.element {
+    width: auto; /* Adjusts to the content */
+    height: 75%;
+    display: inline-block;
+    text-align: center;    
+    margin-left: 3%;
+    margin-top: .9%;
+    opacity: 0.6;
+}
+.firstelement {
+    width: auto; /* Adjusts to the content */
+    height: 75%;
+    display: inline-block;
+    text-align: center;    
+    margin-top: .9%;
+    opacity: 0.6;
+}
+
+.element:hover{
+    border-bottom: 1px solid black;
+    opacity: 1;
+    cursor: pointer;
+}
+.firstelement:hover{
+    border-bottom: 1px solid black;
+    opacity: 1;
+    cursor: pointer;
+}
