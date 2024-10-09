@@ -5,18 +5,21 @@ import { Footer } from './foot';
 import { List } from './list';
 import { SearchBar } from './searchBar';
 import { Categorylist } from './CategoryList';
+import { Headercontainer } from './header';
 
 
 function App() {
   return (
     <div className="App">
-     {/* <Header/> */}
-     {/* <Categories/> */}
-     <Header/>
-     <SearchBar/>
-     <Categorylist/>
-     <List/>
-     <Footer/>
+      {/* <Header/>
+      <SearchBar/> */}
+      <Headercontainer/>
+      <div className='muContent'>
+      <Categorylist/>
+      <List/>
+      <Footer/>
+      </div>
+    
     
     </div>
   );

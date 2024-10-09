@@ -1,16 +1,16 @@
 
 .clcontainer{
+    /* margin-top: 20vh; */
     width: 100vw;
     height: 10vh;
     background-color:white;
     border: 0.5px solid black;
-    
 }
 .clmainlist{
     width: 90%;
     height: 100%;
     margin: auto;
-    /* border: 2px solid red; */
+    /* border: 1px solid red; */
     overflow-x: auto;
     white-space: nowrap;
     scrollbar-width: none;
@@ -27,7 +27,7 @@
     text-align: center;    
     margin-left: 3%;
     margin-top: .9%;
-    opacity: 0.6;
+    opacity: 0.65;
 }
 .firstelement {
     width: auto; /* Adjusts to the content */
@@ -35,7 +35,7 @@
     display: inline-block;
     text-align: center;    
     margin-top: .9%;
-    opacity: 0.6;
+    opacity: 0.65;
 }
 
 .element:hover{

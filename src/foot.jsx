@@ -44,8 +44,8 @@ export function Footer(){
                 <div className="fcontainer2">
                     <div>© 2024 Airbnb, Inc.</div>
                     <div className="space">. Privacy</div>
-                    <div className="space">. Terms</div>
                     <div className="space">. Sitemap</div>
+                    <div className="space">. Terms</div>
                     <div className="marginleft"></div>
                     <img className="iconsize" src="/world.png" alt="" />
                     <div className="space" >English(SD)</div>
