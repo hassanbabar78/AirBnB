@@ -2,7 +2,12 @@
 .headcontainer{
     width: 100vw;
     /* height: 20vh; */
-    border: 2px solid green;
+    /* border: 2px solid green; */
     position: fixed;
     z-index: 10;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 }

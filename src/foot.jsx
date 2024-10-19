@@ -53,8 +53,7 @@ export function Footer(){
                     <img className="iconsize" src="/twitter.png" alt="" />
                     <img className="iconsize" src="/facebook.png" alt="" />
                     <img className="iconsize" src="/instagram.png" alt="" />
-                </div>
-                
+                </div>             
            </div>
         </div>
     )
