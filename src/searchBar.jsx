@@ -1,7 +1,14 @@
 
 import './Search.css'; 
-import { useState } from 'react';
+import { useState,useEffect } from 'react';
+import { MdSearch } from 'react-icons/md';
 
+
+function SearchIcon() {
+    return <MdSearch style={{ color: 'white', fontSize: '17px' }} />;
+  }
+  export default SearchIcon;
+  
 export function SearchBar(){
     let count = 0;
     // const [isButtonClicked, setButtonClicked] = useState(true);
@@ -11,6 +18,9 @@ export function SearchBar(){
     const[Infants, setInfants] = useState(0);
     const[Pets, setPets] = useState(0);
     const[isDropdownVisible, setDropdownVisible] = useState(false);
+    const[isGuestVisible, setGuestVisible] = useState(false);
+    const [isScrolled, setIsScrolled] = useState(false);
+
     const showDropdown = () => {
         setDropdownVisible(true);
     };
@@ -19,7 +29,6 @@ export function SearchBar(){
             setDropdownVisible(false);
         }, 200);
     };
-    const[isGuestVisible, setGuestVisible] = useState(false);
     const showGuest = () => {
         setGuestVisible(true);
     };
@@ -28,6 +37,7 @@ export function SearchBar(){
             // setGuestVisible(false);
         }, 200);
     };
+    
     const[guestCount, setGuestCount]= useState(0);
     // const AddGuest = () => {
     //     setGuestCount(guestCount+1);
@@ -83,8 +93,21 @@ export function SearchBar(){
             setPets(Pets-1);
         }        
     }
+// Setting up scroll detection for x-axis scrolling
+// useEffect(() => {
+//     const handleScroll = () => {
+//         if (window.scrollX > 0) {
+//             setIsScrolled(true);
+//         } else {
+//             setIsScrolled(false);
+//         }
+//     };
+//     window.addEventListener('scroll', handleScroll);
+//     return () => window.removeEventListener('scroll', handleScroll);
+// },);
+
     return(
-        <div className='container'>
+        <div className={`container ${isScrolled ? 'scrolled' : ''}`}>
             <div className='scontainer'>
                 <div className='spart'>
                     <div className="dropdown">
@@ -150,67 +173,76 @@ export function SearchBar(){
                         />
                     </div>           
                 </div>
-                <div className='spart'>
-                    <div className='dropdown'>
-                        <div className='sspace'>Who</div>
-                        <input
-                             className='sspace'
-                             type="text"
-                             placeholder='Add Guest'
-                             value={`${guestCount} Guests ${isPetClicked ? `, ${Pets} pets`: ''}`}
-                             onFocus={showGuest}
-                             onBlur={hideGuest}
-                        />
-
-                        {isGuestVisible && (
-                            <div className='dropdown-content'>
-                                <div className="suggestion1box">
-                                    <div className="suggestion1text">
-                                       <div className='bold' >Adults</div>
-                                       <div>Ages 13 or above</div>
-                                    </div>
-                                    <div className="suggestion1btn">
-                                        <button className='btn' onClick={RemoveAdult}>-</button>
-                                        <span className='textleftspace'>{Adults}</span>
-                                        <button className='textleftspace btn' onClick={AddAdult}>+</button>
-                                    </div>
-                                </div>
-                                <div className="suggestion1box">
-                                    <div className="suggestion1text">
-                                       <div className='bold' >Children</div>
-                                       <div>Ages 2-12</div>
-                                    </div>
-                                    <div className="suggestion1btn">
-                                        <button className='btn' onClick={RemoveChildren}>-</button>
-                                        <span className='textleftspace'>{Children}</span>
-                                        <button className='textleftspace btn' onClick={AddChildren}>+</button>
-                                    </div>
-                                </div>
-                                <div className="suggestion1box">
-                                    <div className="suggestion1text">
-                                       <div className='bold' >Infants</div>
-                                       <div>Under 2</div>
-                                    </div>
-                                    <div className="suggestion1btn">
-                                        <button className='btn' onClick={RemoveInfants}>-</button>
-                                        <span className='textleftspace'>{Infants}</span>
-                                        <button className='textleftspace btn' onClick={AddInfants}>+</button>
-                                    </div>
-                                </div>
-                                <div className="suggestion1box">
-                                    <div className="suggestion1text">
-                                        <div className='bold'>Pets</div>
-                                        <div>Bringing a service animal?</div>
-                                    </div>
-                                    <div className="suggestion1btn">
-                                        <button className='btn' onClick={RemovePets}>-</button>
-                                        <span className='textleftspace'>{Pets}</span>
-                                        <button className='textleftspace btn' onClick={AddPets}>+</button>
-                                    </div>
-                                </div>
+                <div className='spart-last'>
+                    <div className="spart-data">
+                        <div className='dropdown'>
+                            <div className='sspace'>Who
                             </div>
-                        )}
+                            <input
+                                className='sspace'
+                                type="text"
+                                placeholder='Add Guest'
+                                value={`${guestCount} Guests ${isPetClicked && Pets>0  ? `, ${Pets} pets`: ''}`}
+                                onFocus={showGuest}
+                                onBlur={hideGuest}
+                                
+                            />
+                            {isGuestVisible && (
+                                <div className='dropdown-content'>
+                                    <div className="suggestion1box">
+                                        <div className="suggestion1text">
+                                        <div className='bold' >Adults</div>
+                                        <div>Ages 13 or above</div>
+                                        </div>
+                                        <div className="suggestion1btn">
+                                            <button className='btn' onClick={RemoveAdult}>-</button>
+                                            <span className='textleftspace'>{Adults}</span>
+                                            <button className='textleftspace btn' onClick={AddAdult}>+</button>
+                                        </div>
+                                    </div>
+                                    <div className="suggestion1box">
+                                        <div className="suggestion1text">
+                                        <div className='bold' >Children</div>
+                                        <div>Ages 2-12</div>
+                                        </div>
+                                        <div className="suggestion1btn">
+                                            <button className='btn' onClick={RemoveChildren}>-</button>
+                                            <span className='textleftspace'>{Children}</span>
+                                            <button className='textleftspace btn' onClick={AddChildren}>+</button>
+                                        </div>
+                                    </div>
+                                    <div className="suggestion1box">
+                                        <div className="suggestion1text">
+                                        <div className='bold' >Infants</div>
+                                        <div>Under 2</div>
+                                        </div>
+                                        <div className="suggestion1btn">
+                                            <button className='btn' onClick={RemoveInfants}>-</button>
+                                            <span className='textleftspace'>{Infants}</span>
+                                            <button className='textleftspace btn' onClick={AddInfants}>+</button>
+                                        </div>
+                                    </div>
+                                    <div className="suggestion1box">
+                                        <div className="suggestion1text">
+                                            <div className='bold'>Pets</div>
+                                            <div>Bringing a service animal?</div>
+                                        </div>
+                                        <div className="suggestion1btn">
+                                            <button className='btn' onClick={RemovePets}>-</button>
+                                            <span className='textleftspace'>{Pets}</span>
+                                            <button className='textleftspace btn' onClick={AddPets}>+</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            )}
+                        </div>
                     </div>
+                    <div className="spart-logo"> 
+                        <div className='spart-logo-inside'>
+                            <SearchIcon/>
+                        </div>
+                    </div>
+                 
                 </div>
             </div>
         </div>

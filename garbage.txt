@@ -1,0 +1,31 @@
+fetch(); //databse
+
+
+import list
+
+
+let myarr;
+
+list.map()={
+
+}
+
+
+
+myarr.map{}
+
+
+
+
+//////////////////////////////
+
+
+
+usestate=>head
+usestate=>head
+
+usestate=>head
+
+usestate=>head
+
+usestate=>head

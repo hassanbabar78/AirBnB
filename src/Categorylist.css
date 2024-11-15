@@ -4,7 +4,7 @@
     width: 100vw;
     height: 10vh;
     background-color:white;
-    border: 0.5px solid black;
+    border: 0.5px solid grey;
 }
 .clmainlist{
     width: 90%;
@@ -27,7 +27,7 @@
     text-align: center;    
     margin-left: 3%;
     margin-top: .9%;
-    opacity: 0.65;
+    opacity: 0.75;
 }
 .firstelement {
     width: auto; /* Adjusts to the content */
@@ -35,7 +35,7 @@
     display: inline-block;
     text-align: center;    
     margin-top: .9%;
-    opacity: 0.65;
+    opacity: 0.75;
 }
 
 .element:hover{

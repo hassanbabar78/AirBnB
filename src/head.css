@@ -5,7 +5,6 @@
     height: 10vh;
     background-color:white;
     color: black;
-    /* border: 2px solid rgb(156, 11, 11); */
     display: flex;
 }
 *{
@@ -34,6 +33,7 @@
     height: 100%;
     display: flex;
     align-items: center;
+    position: relative;
 }
 .smallicon{
     width: 15px;
@@ -73,7 +73,47 @@
 }
 .hbox:hover{
     box-shadow: 0px 1.5px 5px rgba(37, 46, 37, 0.3);
+    cursor: pointer;
 }
 .bigtext{
     font-size: 17px;
+}
+.hdropdown-content {
+    position: absolute;
+    top: 100%;
+    background-color: white;
+    border: 0.5px solid grey;
+    border-radius: 10px;
+    z-index: 1;
+    width: 80%;
+    height: 300%;
+    overflow-y: auto;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+}
+
+.hsuggestion {
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 13px;
+}
+.hsuggestion:hover{
+    background-color: rgb(243, 239, 239);
+}
+.hbtn{
+    background: none;
+}
+.hmenubtn{
+    border: none;
+    background-color: transparent;
+    display: block;
+    max-height: 45px;
+}
+.hmenubtn:hover{
+    background-color: rgb(243, 239, 239);
+    cursor: pointer;
+}
+.textbold{
+    font-weight: bold;
 }
